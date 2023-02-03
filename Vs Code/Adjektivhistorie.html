@@ -9,6 +9,7 @@
         body{
             background-color: rgb(122, 181, 249);
         }
+        
         div{
             float: left;
             margin: 10px;
@@ -35,22 +36,29 @@
             height: 30px;
             text-align: center;
         }
+
+        .ord{
+            
+        }
      </style>
 </head>
 <body>
     <div class="historien" id="histOutput"></div>
 
-<div class="ordBokser velg" onclick="velgFørsteOrd(this)">vakker</div>
-<div class="velg" onclick="velgFørsteOrd(this)">fæl</div>
 
-<div class="ordBokser velg" onclick="velgAndreOrd(this)">kult</div>
-<div class="velg" onclick="velgAndreOrd(this)">slemt</div>
+<div class="ord">
+    <div class="ordBokser velg" onclick="velgFørsteOrd(this)">vakker</div>
+    <div class="velg" onclick="velgFørsteOrd(this)">fæl</div>
 
-<div class="ordBokser velg" onclick="velgTredjeOrd(this)">ordentlig</div>
-<div class="velg" onclick="velgTredjeOrd(this)">falsk</div>
+    <div class="ordBokser velg" onclick="velgAndreOrd(this)">kult</div>
+    <div class="velg" onclick="velgAndreOrd(this)">slemt</div>
 
-<div class="ordBokser velg" onclick="velgFjerdeOrd(this)">smart</div>
-<div class="velg" onclick="velgFjerdeOrd(this)">dum</div>
+    <div class="ordBokser velg" onclick="velgTredjeOrd(this)">ordentlig</div>
+    <div class="velg" onclick="velgTredjeOrd(this)">falsk</div>
+
+    <div class="ordBokser velg" onclick="velgFjerdeOrd(this)">smart</div>
+    <div class="velg" onclick="velgFjerdeOrd(this)">dum</div>
+</div>
 
     <script>
         const output = document.getElementById("histOutput")
