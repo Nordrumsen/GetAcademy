@@ -6,6 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crocodile game</title>
+
+    <style>
+        img {
+            height: 150px;
+            width: 150px;
+        }
+    
+        input {
+            width: 10px;
+        }
+
+        .app{
+            display: flex;
+
+        }
+    </style>
+
 </head>
 
 <body>
@@ -24,9 +41,11 @@
             document.getElementById('app').innerHTML = /*HTML*/`
             <img src = "Croc.webp"/>
             <div>Poeng: ${poeng}</div>
+            <div class="app">
             <div>${firstNum}</div> 
-            <div>${secNum}</div>
             <input id="svarBoks" type="text">
+            <div>${secNum}</div>
+            </div>
             <button onclick="submit()">Submit</button>
             <button onclick="reset()">Reset</button>
             `;
@@ -42,6 +61,7 @@
         }
 
         function reset() {
+            poeng=0;
             updateNumbers()
             updateView()
         }
@@ -82,15 +102,5 @@
     </script>
 </body>
 
-<style>
-    img {
-        height: 150px;
-        width: 150px;
-    }
-
-    input {
-        width: 105px;
-    }
-</style>
 
 </html>
